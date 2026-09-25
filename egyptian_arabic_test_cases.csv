@@ -1,0 +1,51 @@
+﻿id,dialect,category,difficulty,context_type,text,expected_intent,expected_entities
+EG001,egyptian,greeting,easy,single_turn,السلام عليكم,greeting,
+EG002,egyptian,greeting,easy,single_turn,ألو، مساء الخير,greeting,
+EG003,egyptian,greeting,easy,single_turn,إزيك؟ ممكن تساعدني؟,greeting,
+EG004,egyptian,greeting,easy,single_turn,لو سمحت ممكن أسأل عن حاجة؟,general_question,
+EG005,egyptian,greeting,easy,single_turn,أنا كنت عايز أستفسر عن حاجة,general_question,
+EG006,egyptian,general,easy,single_turn,مواعيد العمل عندكم إيه؟,business_hours,
+EG007,egyptian,general,easy,single_turn,بتفتحوا الساعة كام؟,business_hours,
+EG008,egyptian,general,easy,single_turn,بتشتغلوا يوم الجمعة؟,business_hours,day=Friday
+EG009,egyptian,general,easy,single_turn,عنوانكم فين؟,location_question,
+EG010,egyptian,general,easy,single_turn,عندكم مكان للركن؟,general_question,
+EG011,egyptian,services,easy,single_turn,إيه الخدمات اللي بتقدموها؟,service_information,
+EG012,egyptian,services,easy,single_turn,ممكن أعرف الخدمات المتاحة عندكم؟,service_information,
+EG013,egyptian,services,easy,single_turn,عندكم كشف أسنان؟,service_information,service=dental consultation
+EG014,egyptian,services,easy,single_turn,بتقدموا خدمة تنظيف الأسنان؟,service_information,service=teeth cleaning
+EG015,egyptian,services,easy,single_turn,عندكم خدمة طوارئ؟,service_information,service=emergency
+EG016,egyptian,availability,easy,single_turn,فيه مواعيد متاحة بكرة؟,check_availability,date=tomorrow
+EG017,egyptian,availability,medium,single_turn,ممكن أعرف أقرب معاد متاح؟,check_availability,earliest_available
+EG018,egyptian,availability,easy,single_turn,فيه حاجة متاحة الساعة تلاتة؟,check_availability,time=15:00
+EG019,egyptian,availability,easy,single_turn,الساعة خمسة متاحة؟,check_availability,time=17:00
+EG020,egyptian,availability,easy,single_turn,عندكم معاد بعد الضهر؟,check_availability,time_period=afternoon
+EG021,egyptian,availability,easy,single_turn,فيه حاجة متاحة يوم الخميس؟,check_availability,day=Thursday
+EG022,egyptian,availability,medium,single_turn,ممكن أشوف المواعيد المتاحة الأسبوع الجاي؟,check_availability,date_range=next_week
+EG023,egyptian,availability,hard,single_turn,لو مفيش تلاتة، فيه حاجة بعدها؟,check_availability,time=15:00;after=15:00
+EG024,egyptian,availability,easy,single_turn,عندكم أي معاد النهارده؟,check_availability,date=today
+EG025,egyptian,availability,easy,single_turn,عايز أعرف لو فيه حاجة بكرة الصبح,check_availability,date=tomorrow;time_period=morning
+EG026,egyptian,booking,easy,single_turn,عايز أحجز موعد,create_booking,
+EG027,egyptian,booking,easy,single_turn,ممكن تحجزلي بكرة؟,create_booking,date=tomorrow
+EG028,egyptian,booking,easy,single_turn,عايز أحجز بكرة الساعة تلاتة,create_booking,date=tomorrow;time=15:00
+EG029,egyptian,booking,easy,single_turn,ممكن أحجز يوم الخميس الساعة خمسة؟,create_booking,day=Thursday;time=17:00
+EG030,egyptian,booking,easy,single_turn,عايز أحجز كشف أسنان,create_booking,service=dental consultation
+EG031,egyptian,booking,medium,single_turn,ممكن تحجزلي أقرب معاد متاح؟,create_booking,earliest_available
+EG032,egyptian,booking,medium,single_turn,عايز معاد بعد الضهر بكرة,create_booking,date=tomorrow;time_period=afternoon
+EG033,egyptian,booking,hard,single_turn,لو فيه حاجة الساعة تلاتة احجزهالي,create_booking,time=15:00
+EG034,egyptian,booking,medium,single_turn,عايز أحجز يوم خمسة وعشرين سبتمبر,create_booking,date=2026-09-25
+EG035,egyptian,booking,easy,single_turn,ممكن تحجزلي الساعة تلاتة ونص؟,create_booking,time=15:30
+EG036,egyptian,cancellation,easy,single_turn,عايز ألغي الموعد بتاعي,cancel_booking,
+EG037,egyptian,cancellation,easy,single_turn,ممكن ألغي الحجز؟,cancel_booking,
+EG038,egyptian,cancellation,easy,single_turn,عايز ألغي موعد بكرة,cancel_booking,date=tomorrow
+EG039,egyptian,rescheduling,easy,single_turn,عايز أغير معاد الحجز,reschedule_booking,
+EG040,egyptian,rescheduling,easy,single_turn,ممكن أأجل الموعد ليوم تاني؟,reschedule_booking,
+EG041,egyptian,rescheduling,medium,single_turn,عايز أخلي الموعد الساعة خمسة بدل تلاتة,reschedule_booking,old_time=15:00;new_time=17:00
+EG042,egyptian,date_time,ambiguous,single_turn,الساعة تلاتة ونص مناسبة,general_question,time=15:30
+EG043,egyptian,date_time,ambiguous,single_turn,بكرة الساعة سبعة الصبح,general_question,date=tomorrow;time=07:00
+EG044,egyptian,date_time,ambiguous,single_turn,يوم خمسة وعشرين سبتمبر,general_question,date=2026-09-25
+EG045,egyptian,numbers,medium,single_turn,رقم موبايلي صفر واحد صفر، اتنين تلاتة أربعة، خمسة ستة سبعة تمنية,provide_information,phone_number
+EG046,egyptian,code_switching,easy,single_turn,ممكن أعرف الـ price؟,pricing_question,
+EG047,egyptian,code_switching,easy,single_turn,عايز أعمل appointment بكرة,create_booking,date=tomorrow
+EG048,egyptian,code_switching,easy,single_turn,فيه availability الساعة خمسة؟,check_availability,time=17:00
+EG049,egyptian,code_switching,easy,single_turn,ممكن confirm الحجز؟,confirmation,
+EG050,egyptian,code_switching,easy,single_turn,عايز أغير الـ appointment بتاعي,reschedule_booking,

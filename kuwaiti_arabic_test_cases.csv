@@ -1,0 +1,51 @@
+﻿id,dialect,category,difficulty,context_type,text,expected_intent,expected_entities
+KW001,kuwaiti,greeting,easy,single_turn,السلام عليكم,greeting,
+KW002,kuwaiti,greeting,easy,single_turn,هلا، السلام عليكم,greeting,
+KW003,kuwaiti,greeting,easy,single_turn,مساء الخير، ممكن تساعدني؟,greeting,
+KW004,kuwaiti,greeting,easy,single_turn,لو سمحت عندي استفسار,general_question,
+KW005,kuwaiti,greeting,easy,single_turn,أبي أسأل عن شي,general_question,
+KW006,kuwaiti,general,easy,single_turn,شنو أوقات الدوام عندكم؟,business_hours,
+KW007,kuwaiti,general,easy,single_turn,متى تفتحون؟,business_hours,
+KW008,kuwaiti,general,easy,single_turn,تداومون يوم الجمعة؟,business_hours,day=Friday
+KW009,kuwaiti,general,easy,single_turn,وين مكانكم؟,location_question,
+KW010,kuwaiti,general,easy,single_turn,عندكم مواقف؟,general_question,
+KW011,kuwaiti,services,easy,single_turn,شنو الخدمات اللي تقدمونها؟,service_information,
+KW012,kuwaiti,services,easy,single_turn,ممكن أعرف شنو الخدمات المتوفرة عندكم؟,service_information,
+KW013,kuwaiti,services,easy,single_turn,عندكم موعد أسنان؟,service_information,service=dental consultation
+KW014,kuwaiti,services,easy,single_turn,تقدمون خدمة تنظيف الأسنان؟,service_information,service=teeth cleaning
+KW015,kuwaiti,services,easy,single_turn,عندكم خدمة للطوارئ؟,service_information,service=emergency
+KW016,kuwaiti,availability,easy,single_turn,في مواعيد متوفرة باچر؟,check_availability,date=tomorrow
+KW017,kuwaiti,availability,medium,single_turn,ممكن أشوف أقرب موعد متوفر؟,check_availability,earliest_available
+KW018,kuwaiti,availability,easy,single_turn,في موعد الساعة ثلاث؟,check_availability,time=15:00
+KW019,kuwaiti,availability,easy,single_turn,الساعة خمس متوفرة؟,check_availability,time=17:00
+KW020,kuwaiti,availability,easy,single_turn,عندكم شي متوفر بعد الظهر؟,check_availability,time_period=afternoon
+KW021,kuwaiti,availability,easy,single_turn,في موعد يوم الخميس؟,check_availability,day=Thursday
+KW022,kuwaiti,availability,medium,single_turn,ممكن أشوف المواعيد المتوفرة الأسبوع الياي؟,check_availability,date_range=next_week
+KW023,kuwaiti,availability,hard,single_turn,إذا ما في الساعة ثلاث، في شي بعدها؟,check_availability,time=15:00;after=15:00
+KW024,kuwaiti,availability,easy,single_turn,عندكم أي موعد اليوم؟,check_availability,date=today
+KW025,kuwaiti,availability,easy,single_turn,أبي أعرف إذا في شي متوفر باچر الصبح,check_availability,date=tomorrow;time_period=morning
+KW026,kuwaiti,booking,easy,single_turn,أبي أحجز موعد,create_booking,
+KW027,kuwaiti,booking,easy,single_turn,ممكن تحجز لي باچر؟,create_booking,date=tomorrow
+KW028,kuwaiti,booking,easy,single_turn,أبي أحجز باچر الساعة ثلاث,create_booking,date=tomorrow;time=15:00
+KW029,kuwaiti,booking,easy,single_turn,ممكن أحجز يوم الخميس الساعة خمس؟,create_booking,day=Thursday;time=17:00
+KW030,kuwaiti,booking,easy,single_turn,أبي أحجز موعد أسنان,create_booking,service=dental consultation
+KW031,kuwaiti,booking,medium,single_turn,ممكن تحجز لي أقرب موعد؟,create_booking,earliest_available
+KW032,kuwaiti,booking,medium,single_turn,أبي موعد بعد الظهر باچر,create_booking,date=tomorrow;time_period=afternoon
+KW033,kuwaiti,booking,hard,single_turn,إذا في شي الساعة ثلاث احجزه لي,create_booking,time=15:00
+KW034,kuwaiti,booking,medium,single_turn,أبي أحجز يوم خمسة وعشرين سبتمبر,create_booking,date=2026-09-25
+KW035,kuwaiti,booking,easy,single_turn,ممكن تحجز لي الساعة ثلاث ونص؟,create_booking,time=15:30
+KW036,kuwaiti,cancellation,easy,single_turn,أبي ألغي الموعد,cancel_booking,
+KW037,kuwaiti,cancellation,easy,single_turn,ممكن ألغي الحجز؟,cancel_booking,
+KW038,kuwaiti,cancellation,easy,single_turn,أبي ألغي موعد باچر,cancel_booking,date=tomorrow
+KW039,kuwaiti,rescheduling,easy,single_turn,أبي أغير موعد الحجز,reschedule_booking,
+KW040,kuwaiti,rescheduling,easy,single_turn,ممكن أأجل الموعد ليوم ثاني؟,reschedule_booking,
+KW041,kuwaiti,rescheduling,medium,single_turn,أبي أخلي الموعد الساعة خمس بدل ثلاث,reschedule_booking,old_time=15:00;new_time=17:00
+KW042,kuwaiti,date_time,ambiguous,single_turn,الساعة ثلاث ونص مناسبة,general_question,time=15:30
+KW043,kuwaiti,date_time,ambiguous,single_turn,باچر الساعة سبع الصبح,general_question,date=tomorrow;time=07:00
+KW044,kuwaiti,date_time,ambiguous,single_turn,يوم خمسة وعشرين سبتمبر,general_question,date=2026-09-25
+KW045,kuwaiti,numbers,medium,single_turn,رقم تلفوني صفر واحد صفر، اثنين ثلاثة أربعة، خمسة ستة سبعة ثمانية,provide_information,phone_number
+KW046,kuwaiti,code_switching,easy,single_turn,ممكن أعرف الـ price؟,pricing_question,
+KW047,kuwaiti,code_switching,easy,single_turn,أبي أسوي appointment باچر,create_booking,date=tomorrow
+KW048,kuwaiti,code_switching,easy,single_turn,في availability الساعة خمس؟,check_availability,time=17:00
+KW049,kuwaiti,code_switching,easy,single_turn,ممكن confirm الحجز؟,confirmation,
+KW050,kuwaiti,code_switching,easy,single_turn,أبي أغير الـ appointment,reschedule_booking,
