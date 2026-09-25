@@ -1,0 +1,2 @@
+id,dialect,category,expected_text,transcription,expected_intent,predicted_intent,expected_entities,predicted_entities,transcription_correct,intent_correct,entities_correct,response,response_audio_path,latency_ms,notes
+EG001,egyptian,greeting,السلام عليكم,السلام عليكم,greeting,greeting,,,True,True,True,وعليكم السلام! أهلاً وسهلاً بحضرتك. إزاي أقدر أساعد؟ محتاج موعد، ولا حابب تستفسر عن حاجة معينة؟,results/audio/egyptian/EG001_response.mp3,6008,Understood the greeting correctly and replied naturally in Egyptian Arabic.
