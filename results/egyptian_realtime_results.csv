@@ -1,0 +1,2 @@
+id,dialect,category,model,expected_text,input_transcription,transcription_correct,response,response_audio_path,response_audio_seconds,time_to_first_audio_ms,total_response_ms,response_quality,notes
+EG001,egyptian,greeting,gpt-realtime-2.1,السلام عليكم,السلام عليكم,True,وعليكم السلام ورحمة الله. أهلاً وسهلاً بيك. حابب أساعدك في إيه النهاردة؟,results/audio/egyptian/EG001_realtime_response.wav,5.9,819,1729,,

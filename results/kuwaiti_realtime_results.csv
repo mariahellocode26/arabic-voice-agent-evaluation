@@ -1,0 +1,2 @@
+id,dialect,category,model,expected_text,input_transcription,transcription_correct,response,response_audio_path,response_audio_seconds,time_to_first_audio_ms,total_response_ms,response_quality,notes
+KW001,kuwaiti,greeting,gpt-realtime-2.1,السلام عليكم,السلام عليكم,True,وعليكم السلام حياك الله، شلون أقدر أساعدك اليوم؟,results/audio/kuwaiti/KW001_realtime_response.wav,5.25,985,1810,,
