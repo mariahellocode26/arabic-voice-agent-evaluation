@@ -1,0 +1,2 @@
+id,dialect,category,expected_text,transcription,expected_intent,predicted_intent,expected_entities,predicted_entities,transcription_correct,intent_correct,entities_correct,response,response_audio_path,latency_ms,notes
+KW001,kuwaiti,greeting,السلام عليكم,السلام عليكم.,greeting,greeting,,,True,True,True,وعليكم السلام ورحمة الله. يا هلا ومرحبا. كيف أقدر أساعدك اليوم؟,results/audio/kuwaiti/KW001_response.mp3,6135,
